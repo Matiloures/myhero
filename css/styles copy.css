@@ -1,0 +1,136 @@
+@import url(../tipografia/commando.ttf);
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+body {
+    background-color: #FFF323;
+}
+
+/*--HEADER--*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF323;
+}
+.header img{
+    display: flex;
+    width: 150px; 
+}
+.header nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.header nav ul li a:hover{
+    color: red;
+    transition: 0,5s;
+    text-shadow: none;
+}
+.menu__boton{
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*--main index--*/
+main img{
+    width: 100%;
+}
+.myheroaca{
+    margin: 20px 200px 20px 200px;
+    text-align: justify;
+}
+.myheroaca h1{
+    text-align: center;  
+}
+h2{
+    text-align: center;
+}
+.mangaindex{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.mangaindex img{
+    width: 12%;
+    margin-right: 10px;
+    border-radius: 5%;
+    border-style: groove; 
+}
+
+.animeindex{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.animeindex img{
+    width: 12%;
+    margin-left: 10px;
+    border-radius: 5%;
+    border-style: groove;  
+}
+
+/*footer*/
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #FFF323;
+}
+
+/*personajes*/
+
+ul{
+    list-style: none;
+}
+.personajes{
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none ;
+    width: 160px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: solid 2px black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card img{ 
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*anime*/
+
+/*manga*/
+
+/*vigilantes*/
+
+
+@media (min-width:768px){    
+
+}
+
+@media (max-width:368px){    
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}

@@ -1,0 +1,216 @@
+@import url(../tipografia/commando.ttf);
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+body {
+    background-color: #FFF323;
+}
+
+
+/*-----Index------*/
+.padre{
+height: 100vh;
+display: grid;
+grid-template-areas: 
+"header header"
+"myheroaca myheroaca"
+"imgmanga mangaindex"
+"animeindex imganime"
+"footer footer";
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF323;
+    font-family: commando;
+    font-size: 3ch;
+}
+.header img{
+    display: flex;
+    width: 125px; 
+}
+.header nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.header nav ul li a:hover{
+    color: red;
+    transition: 0,5s;
+    text-shadow: none;
+}
+.menu__boton{
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main img{
+    width: 100%;
+}
+.myheroaca{
+    grid-area: myheroaca;
+    margin: 0px 200px 20px 200px;
+    text-align: justify;
+}
+.myheroaca h1{
+    padding-top: 2%;
+    text-align: center; 
+    font-family: commando;
+    font-size: 15ch; 
+}
+.imgmanga{
+    grid-area: imgmanga;
+}
+h2{
+    text-align: center;
+    font-family: commando;
+    font-size: 10ch;
+}
+.mangaindex{
+    grid-area: mangaindex;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.mangaindex img{
+    width: 12%;
+    margin-right: 10px;
+    border-radius: 5%;
+    border-style: groove; 
+}
+
+.animeindex{
+    grid-area: animeindex;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.imganime{
+    grid-area: imganime;
+    width: 12%;
+    margin-left: 10px;
+    border-radius: 5%;
+    border-style: groove;  
+}
+
+footer{
+    grid-area: footer;
+    padding: 30px;
+    text-align: center;
+    background-color: #FFF323;
+}
+
+/*-----------personajes------------*/
+ul{
+    list-style: none;
+
+}
+.clase1a{
+    display: block;
+    margin: auto;
+}
+.personajes{
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: solid 2px black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card img{ 
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*personaje Deku*/
+.pjdeku{
+    display: grid;
+    grid-template-areas: 
+        "encabezado encabezado"
+        "bloqueizq dekutitulo"
+        "bloqueizq infoderecha"
+        "registro registro"
+        "footer footer"
+        ;
+}
+.encabezado{
+    display: block;
+    margin: 0px auto;
+    grid-area: encabezado;
+    background-color:black;
+    justify-content: center;
+}
+.bloqueizq{
+    display: block;
+    margin-left: 200px;
+    grid-area: bloqueizq;
+}
+.dekutitulo{
+    grid-area: dekutitulo;
+    margin-right: 200px;
+    font-size: 25ch ;
+    font-family: commando;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.infoderecha{
+    grid-area: infoderecha;
+    margin-right: 200px;
+    text-align: justify;
+    
+}
+.registro{
+    background-color: white;
+    grid-area: registro;
+    margin: 0px 200px 20px 200px;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+/*anime*/
+
+/*manga*/
+
+/*vigilantes*/
+
+@media (min-width:768px){ 
+    .body{
+        background-color: rgb(133, 30, 30);
+    }
+}
+
+@media (max-width:368px){ 
+
+.body{
+        background-color: rgb(76, 0, 255);
+    }
+}
