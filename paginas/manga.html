@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=divice-width,initial-scale=1.0">
 		<title>MyHeroAcademia</title>
 		<link rel="icon"  href="../img/icono.ico">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	</head>
 	<body>
@@ -23,25 +24,52 @@
 				</ul>
 			</nav>
 		</header>
-	<article>
-		<div>
-			<ol>
-				<li>TOMO 1</li>
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+				<button class="accordion-button btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+				  VOLUMEN 1
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+				<div class="accordion-body">
 					<ol>
-						<li>Izuku Midoria: El comienzo</li>
-						<li>Musculos rugientes</li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/1/1" class="menu__boton">Izuku Midoria: El comienzo</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/2/1" class="menu__boton">Musculos rugientes</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/3/1" class="menu__boton">Examen de Ingreso</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/4/1" class="menu__boton">Linea de Salida</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/5/1" class="menu__boton">Entrando a La Academia</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/6/1" class="menu__boton">Lo que puedo hacer por ahora</a></li>
+						<li><a href="https://www.anzmangashd.com/manga/boku-no-hero-academia/7/1" class="menu__boton">Cambio de Ropa</a></li>
 					</ol>
-				<li>TOMO 2</li>
-				<li>TOMO 3</li>
-				<li>TOMO 4</li>
-				<li>TOMO 5</li>
-				<li>TOMO 6</li>
-				<li>TOMO 7</li>
-				<li>TOMO 8</li>
-				<li>TOMO 9</li>
-				<li>TOMO 10</li>
-			</ol>
-		</div>
-	</article>	
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">	
+			  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+				<button class="accordion-button collapsed btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+					VOLUMEN 2
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+				<div class="accordion-body">
+				  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+				<button class="accordion-button collapsed btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+					VOLUMEN 3
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+				<div class="accordion-body">
+				  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				</div>
+			  </div>
+			</div>
+		  </div>
+	<script src="../js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>
