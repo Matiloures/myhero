@@ -1,24 +1,22 @@
 @import url(../tipografia/commando.ttf);
 *{
-margin: 0;
-padding: 0;
-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #FFF323;
-}
+    width: 100%;
+}  
 
 
 /*-----Index------*/
 .padre{
-height: 100vh;
-display: grid;
-grid-template-areas: 
-"header header"
-"myheroaca myheroaca"
-"imgmanga mangaindex"
-"animeindex imganime"
-"footer footer";
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main-content"
+        "footer";
 }
 
 .header{
@@ -30,7 +28,14 @@ grid-template-areas:
     background-color: #FFF323;
     font-family: commando;
     font-size: 3ch;
+    max-height: 100px;
 }
+
+.main-content{
+    width: 100%;
+    align-content: center;
+}
+
 .header img{
     display: flex;
     width: 125px; 
@@ -191,6 +196,7 @@ ul{
 }
 .footer{
     grid-area: footer;
+    width: 100%;
 }
 
 
@@ -213,15 +219,21 @@ ul{
 
 
 
-@media (min-width:768px){ 
-    .body{
-        background-color: rgb(133, 30, 30);
+@media (max-width:768px){ 
+    body{
+        background-color: #FFF323;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 
 @media (max-width:368px){ 
 
-.body{
-        background-color: rgb(76, 0, 255);
+    body{
+        background-color: #FFF323;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }

@@ -10,46 +10,76 @@
 		<title>MyHeroAcademia</title>
 		<link rel="icon"  href="../img/icono.ico">
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	</head>
 	<body>
-		<div class="padrepj">	
+		<div class="padre container">
 			<header class="header">
-				<a href="../index.html"> <img src="../img/myhero.png" alt="logomyhero">		
+				<a href="../index.html" class="menu__boton"> <img src="../img/myhero.png" alt="logomyhero">
 				<nav class="menu">
 					<ul>
-						<li><a href="personajes.html" class="menu__boton">PERSONAJES</a></li>
-						<li><a href="anime.html" class="menu__boton">ANIME</a></li>
-						<li><a href="manga.html" class="menu__boton">MANGA</a></li>					
-						<li><a href="vigilantes.html" class="menu__boton">VIGILANTES</a></li>
+						<li><a href="../paginas/personajes.html" class="menu__boton">PERSONAJES</a></li>
+						<li><a href="../paginas/anime.html"class="menu__boton">ANIME</a></li>
+						<li><a href="../paginas/manga.html"class="menu__boton">MANGA</a></li>					
+						<li><a href="../paginas/vigilantes.html"class="menu__boton">VIGILANTES</a></li>
 					</ul>
-				</nav>
-			</header>	
-			<img class="clase1a" src="../img/clase1a.png" alt="clase1a">
-			<section class="personajes">
-				<div class="card" style="width: 16rem; height: 24rem;">
-					<img src="../img/deku-card.png" class="card-img-top" alt="deku-card">
-					<div class="card-body">
-					  <h5 class="card-title">Midoriya Izuku</h5>
-					  <p class="card-text">Deku</p>
-					  <a href="deku.html" class="btn btn-warning">Ficha Tecnica</a>
+				</nav>	
+			</header>
+			<main class="main-content">
+				<img class="clase1a" src="../img/clase1a.png" alt="clase1a">
+				<section class="personajes">
+					<div class="card" style="width: 16rem; height: 24rem;">
+						<img src="../img/deku-card.png" class="card-img-top" alt="deku-card">
+						<div class="card-body">
+						<h5 class="card-title">Midoriya Izuku</h5>
+						<p class="card-text">Deku</p>
+						<a href="deku.html" class="btn btn-warning">Ficha Tecnica</a>
+						</div>
 					</div>
-				</div>
-				<div class="card" style="width: 16rem; height: 24rem;">
-					<img src="../img/bakugo-card.png" class="card-img-top" alt="bakugo-card">
-					<div class="card-body">
-					  <h5 class="card-title">Katsuki Bakugo</h5>
-					  <p class="card-text">Dynamight</p>
-					  <a href="bakugo.html" class="btn btn-warning">Ficha Tecnica</a>
+					<div class="card" style="width: 16rem; height: 24rem;">
+						<img src="../img/bakugo-card.png" class="card-img-top" alt="bakugo-card">
+						<div class="card-body">
+						<h5 class="card-title">Katsuki Bakugo</h5>
+						<p class="card-text">Dynamight</p>
+						<a href="bakugo1.html" class="btn btn-warning">Ficha Tecnica</a>
+						</div>
 					</div>
-				</div>
+					<div class="card" style="width: 16rem; height: 24rem;">
+						<img src="../img/tenya-card.png" class="card-img-top" alt="tenya-card">
+						<div class="card-body">
+						<h5 class="card-title">Tenya Iida</h5>
+						<p class="card-text">Ingenium</p>
+						<a href="" class="btn btn-warning">Ficha Tecnica</a>
+						</div>
+					</div>
+					<div class="card" style="width: 16rem; height: 24rem;">
+						<img src="../img/todoroki-card.png" class="card-img-top" alt="todoroki-card">
+						<div class="card-body">
+						<h5 class="card-title">Shoto Todoroki</h5>
+						<p class="card-text">Shoto</p>
+						<a href="" class="btn btn-warning">Ficha Tecnica</a>
+						</div>
+					</div>
+					<div class="card" style="width: 16rem; height: 24rem;">
+						<img src="../img/ochaco-card.png" class="card-img-top" alt="ochaco-card">
+						<div class="card-body">
+						<h5 class="card-title">Ochaco Uraraka</h5>
+						<p class="card-text">Uravity</p>
+						<a href="" class="btn btn-warning">Ficha Tecnica</a>
+						</div>
+					</div>
+				</section>
+			</main>
 
-			</section>
+			<footer class="footer">
+				<h4>Copyright - todos los derechos reservados</h4>
+			</footer>
 		</div>	
-
-		<footer class="footer">
-			<h4>Copyright - todos los derechos reservados</h4>
-		</footer>
 		<script src="../js/bootstrap.bundle.min.js"> </script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 </body>
 </html>
