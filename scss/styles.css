@@ -1,0 +1,20 @@
+@import url(../tipografia/commando.ttf);
+
+body {
+  background-color: yellow;
+}
+
+header {
+  background-color: yellow;
+  width: 100%;
+  font-family: commando;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: yellow;
+}
+/*# sourceMappingURL=styles.css.map */

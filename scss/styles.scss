@@ -1,0 +1,139 @@
+@import 'paginas/_variables';
+//npm run watch-css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $primary-color;
+    width: 100%;
+}
+
+.padre{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main-content"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: $primary-color;
+    width: 100%;
+    font-family: $fuente;
+    font-size: 3ch;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        display: flex;
+        width: 125px;
+    }
+    nav{
+
+     ul{
+        display: flex;
+        list-style: none;
+        width: 100%;
+            li{
+                a:hover{
+                color: red;
+                transition: 0,5s;
+                text-shadow: none;
+                }
+                .menu__boton{
+                    text-decoration: none;
+                    margin: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+    }
+
+}
+.main-content{
+    width: 100%;
+    align-content: center;
+    grid-area: main-content;
+        .myheroaca{            
+            margin: 0px 100px 20px 100px;
+            text-align: justify;
+            h1{
+                padding-top: 2%;
+                text-align: center; 
+                font-family: commando;
+                font-size: 15ch;    
+            }
+        }
+    section{
+        h2{
+            text-align: center;
+            font-family: commando;
+            font-size: 10ch;
+        }
+        .mangaindex{
+            display: flex;
+            text-align: justify;
+            align-items: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            img{
+                width: 12%;
+                margin-right: 10px;
+                border-radius: 5%;
+                border-style: groove;
+            }
+        }
+
+        .animeindex{
+            display: flex;
+            text-align: justify;
+            align-items: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            .imganime{
+                width: 12%;
+                margin-left: 10px;
+                border-radius: 5%;
+                border-style: groove;  
+            }
+        }
+        
+    }
+}
+
+
+footer {
+    background-color: $primary-color;
+    grid-area: footer;
+    padding: 30px;
+    text-align: center;
+}
+
+@import 'paginas/_vigilantes';
+@import 'paginas/personajes';
+
+@media (max-width:768px){ 
+    body{
+        background-color: #FFF323;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:368px){ 
+
+    body{
+        background-color: #FFF323;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

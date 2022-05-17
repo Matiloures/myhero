@@ -1,0 +1,39 @@
+@import 'paginas/_variables';
+
+.main-content {
+    .clase1a{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .personajes{
+        padding: 10px;
+        height: 100vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        text-align: center;
+        .card{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 5px 5px 5px 5px;
+            padding: 10px;
+            background-color: white;
+            border: solid 2px black;
+            overflow: hidden;
+            border-radius: 20px;
+            
+            img{ 
+                width: 150px;
+                border-radius: 20px;
+            }
+            p{
+                font-family: $fuente;
+            }  
+        }
+    }
+}
+

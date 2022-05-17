@@ -1,0 +1,22 @@
+@import '_variables.scss';
+
+.main-content{
+    .imgvig{    
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .vigilantes{ 
+        h1{
+        font-family: $fuente;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        font-size: 9ch
+        }
+    }
+}

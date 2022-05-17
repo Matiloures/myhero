@@ -1,0 +1,19 @@
+@import url(../tipografia/commando.ttf);
+@import url(paginas/_variables.scss);
+body {
+  background-color: primary-color; }
+
+.padre {
+  display: grid;
+  grid-template-areas: "header" "main-content" "footer"; }
+
+header {
+  background-color: primary-color;
+  width: 100%;
+  font-family: fuente; }
+  header img {
+    display: flex;
+    width: 125px; }
+
+footer {
+  background-color: primary-color; }

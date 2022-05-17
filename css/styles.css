@@ -1,239 +1,146 @@
-@import url(../tipografia/commando.ttf);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-    background-color: #FFF323;
-    width: 100%;
-}  
+  background-color: yellow;
+  width: 100%; }
 
+.padre {
+  display: grid;
+  grid-template-areas: "header"
+ "main-content"
+ "footer"; }
 
-/*-----Index------*/
-.padre{
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "main-content"
-        "footer";
-}
-
-.header{
-    grid-area: header;
+header {
+  grid-area: header;
+  background-color: yellow;
+  width: 100%;
+  font-family: commando;
+  font-size: 3ch;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  header img {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF323;
-    font-family: commando;
-    font-size: 3ch;
-    max-height: 100px;
-}
-
-.main-content{
-    width: 100%;
-    align-content: center;
-}
-
-.header img{
-    display: flex;
-    width: 125px; 
-}
-.header nav ul{
+    width: 125px; }
+  header nav ul {
     display: flex;
     list-style: none;
-    width: 100%;
-}
-.header nav ul li a:hover{
-    color: red;
-    transition: 0,5s;
-    text-shadow: none;
-}
-.menu__boton{
-    text-decoration: none;
-    margin: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+    width: 100%; }
+    header nav ul li a:hover {
+      color: red;
+      transition: 0,5s;
+      text-shadow: none; }
+    header nav ul li .menu__boton {
+      text-decoration: none;
+      margin: 20px;
+      font-weight: bold;
+      text-transform: uppercase; }
 
-main img{
-    width: 100%;
-}
-.myheroaca{
-    grid-area: myheroaca;
-    margin: 0px 200px 20px 200px;
-    text-align: justify;
-}
-.myheroaca h1{
-    padding-top: 2%;
-    text-align: center; 
-    font-family: commando;
-    font-size: 15ch; 
-}
-.imgmanga{
-    grid-area: imgmanga;
-}
-h2{
+.main-content {
+  width: 100%;
+  align-content: center;
+  grid-area: main-content; }
+  .main-content .myheroaca {
+    margin: 0px 100px 20px 100px;
+    text-align: justify; }
+    .main-content .myheroaca h1 {
+      padding-top: 2%;
+      text-align: center;
+      font-family: commando;
+      font-size: 15ch; }
+  .main-content section h2 {
     text-align: center;
     font-family: commando;
-    font-size: 10ch;
-}
-.mangaindex{
-    grid-area: mangaindex;
+    font-size: 10ch; }
+  .main-content section .mangaindex {
     display: flex;
     text-align: justify;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.mangaindex img{
-    width: 12%;
-    margin-right: 10px;
-    border-radius: 5%;
-    border-style: groove; 
-}
-
-.animeindex{
-    grid-area: animeindex;
+    margin-left: 100px;
+    margin-right: 100px; }
+    .main-content section .mangaindex img {
+      width: 12%;
+      margin-right: 10px;
+      border-radius: 5%;
+      border-style: groove; }
+  .main-content section .animeindex {
     display: flex;
     text-align: justify;
     align-items: center;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.imganime{
-    grid-area: imganime;
-    width: 12%;
-    margin-left: 10px;
-    border-radius: 5%;
-    border-style: groove;  
-}
+    margin-left: 100px;
+    margin-right: 100px; }
+    .main-content section .animeindex .imganime {
+      width: 12%;
+      margin-left: 10px;
+      border-radius: 5%;
+      border-style: groove; }
 
-footer{
-    grid-area: footer;
-    padding: 30px;
+footer {
+  background-color: yellow;
+  grid-area: footer;
+  padding: 30px;
+  text-align: center; }
+
+.main-content .imgvig {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.main-content .vigilantes h1 {
+  font-family: commando;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  font-size: 9ch; }
+
+.main-content .clase1a {
+  display: flex;
+  margin: auto;
+  width: 100%; }
+
+.main-content .personajes {
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-align: center; }
+  .main-content .personajes .card {
+    display: flex;
+    align-items: center;
     text-align: center;
-    background-color: #FFF323;
-}
-
-/*-----------personajes------------*/
-ul{
-    list-style: none;
-
-}
-.clase1a{
-    display: block;
-    margin: auto;
-}
-.personajes{
+    width: 100%;
+    margin: 5px 5px 5px 5px;
     padding: 10px;
-    height: 100vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    text-align: center;
-}
-.card{
-    display: inline-block;
-    text-align: center;
-    width: 160px;
-    padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid 2px black;
     overflow: hidden;
-    border-radius: 20px;
-}
-.card img{ 
+    border-radius: 20px; }
+    .main-content .personajes .card img {
+      width: 150px;
+      border-radius: 20px; }
+    .main-content .personajes .card p {
+      font-family: commando; }
+
+@media (max-width: 768px) {
+  body {
+    background-color: #FFF323;
     width: 100%;
-    border-radius: 20px;
-}
+    margin: 0;
+    padding: 0; } }
 
-/*personaje Deku*/
-.pjdeku{
-    display: grid;
-    grid-template-areas: 
-        "encabezado encabezado"
-        "bloqueizq dekutitulo"
-        "bloqueizq infoderecha"
-        "registro registro"
-        "footer footer"
-        ;
-}
-.encabezado{
-    display: block;
-    margin: 0px auto;
-    grid-area: encabezado;
-    background-color:black;
-    justify-content: center;
-}
-.bloqueizq{
-    display: block;
-    margin-left: 200px;
-    grid-area: bloqueizq;
-}
-.dekutitulo{
-    grid-area: dekutitulo;
-    margin-right: 200px;
-    font-size: 25ch ;
-    font-family: commando;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.infoderecha{
-    grid-area: infoderecha;
-    margin-right: 200px;
-    text-align: justify;
-    
-}
-.registro{
-    background-color: white;
-    grid-area: registro;
-    margin: 0px 200px 20px 200px;
-}
-.footer{
-    grid-area: footer;
+@media (max-width: 368px) {
+  body {
+    background-color: #FFF323;
     width: 100%;
-}
-
-
-
-
-/*anime*/
-
-/*manga*/
-
-/*vigilantes*/
-
-.imgvig{
-    display: flex;
-    justify-content: center;
-}
-.vigilantes{
-    display: flex;
-    margin: auto;
-}
-
-
-
-@media (max-width:768px){ 
-    body{
-        background-color: #FFF323;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-@media (max-width:368px){ 
-
-    body{
-        background-color: #FFF323;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
+    margin: 0;
+    padding: 0; } }
